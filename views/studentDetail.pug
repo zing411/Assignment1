@@ -1,0 +1,16 @@
+html
+  head
+    title Student Details
+  body
+    h2 Student Details
+    ul
+      li ID: #{student.id}
+      li Name: #{student.name}
+      li Department: #{student.department}
+      li Courses: #{student.courses.join(', ')}
+      li Completed Courses: #{student.completedCourses.join(', ')}
+      li Semester: #{student.semester}
+      li Grade 1: #{student.grade1}
+      li Grade 2: #{student.grade2}
+      li Grade 3: #{student.grade3}
+    p Average Grade: #{average}%

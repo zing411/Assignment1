@@ -1,0 +1,21 @@
+html
+  head
+    title Student
+  body
+    each student in students
+      h3 ID: #{student.id}
+      h3 Name: #{student.name}
+      h3 Department: #{student.department}
+      h3 Grades: #{student.grade1}, #{student.grade2}, #{student.grade3}
+      h3 Courses Enrolled
+        ul
+          each course in student.courses
+            li= course
+      h3 Completed Courses
+        ul
+          each completedCourse in student.completedCourses
+            li= completedCourse
+      h3 Semester
+        ul
+          li= student.semester
+        hr
